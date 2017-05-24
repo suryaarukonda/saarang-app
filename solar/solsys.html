@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    
+
+<div id="bg">
+  <img src="galaxy.jpg" alt="">
+</div>
+
+
+
+    <body>
+        <!-- Right below is an image of the sun -->
+        <img id="sun" src="sun.jpg">
+        <div id="mercury-orbit">x
+        <img id="mercury" src="mercury.jpg">
+        </div>
+        <div id="venus-orbit">
+        <img id="venus" src="venus.jpg">
+        </div>
+        <div id="mars-orbit">
+        <img id="mars" src="mars.jpg">
+        </div>
+        <div id="earth-orbit">
+        <img id="earth" src="earth.jpg">
+        </div>
+        <div id="buttons">
+        <button onclick="myFunction()">  Reset  </button>
+        <button class=start onclick="start()">  start  </button>
+        <button class=end onclick="end()">  end  </button><br><br>
+        <button class=start  onclick="mercurystart()"> mercury start </button>
+        <button class=end onclick="mercuryend()">  mercury end  </button><br><br>
+        <button class=start onclick="venstart()">  venus start  </button>
+        <button class=end onclick="venusend()">   venus end   </button><br><br>
+        <button class=start onclick="earthstart()">   earthstart  </button>
+        <button class=end onclick="earthend()">   earthend    </button><br><br>
+        <button class=start onclick="marstart()">  mars start   </button>
+        <button class=end onclick="marend()">    mars end   </button>
+        </div>
+       
+<script>
+function myFunction() {
+    location.reload();
+}
+function mers(){
+    document.getElementById("mercury-orbit").style.WebkitAnimationPlayState="running";   
+    document.getElementById("mercury-orbit").style.animationPlayState="running";}
+function mere(){
+    document.getElementById("mercury-orbit").style.WebkitAnimationPlayState="paused";
+    document.getElementById("mercury-orbit").style.animationPlayState="paused";}
+function vens(){
+    document.getElementById("venus-orbit").style.WebkitAnimationPlayState="running";   
+    document.getElementById("venus-orbit").style.animationPlayState="running";}
+function vene(){
+    document.getElementById("venus-orbit").style.WebkitAnimationPlayState="paused";
+    document.getElementById("venus-orbit").style.animationPlayState="paused";}
+function ears(){
+    document.getElementById("earth-orbit").style.WebkitAnimationPlayState="running";   
+    document.getElementById("earth-orbit").style.animationPlayState="running";}
+function eare(){
+    document.getElementById("earth-orbit").style.WebkitAnimationPlayState="paused";
+    document.getElementById("earth-orbit").style.animationPlayState="paused";}
+function marst(){
+    document.getElementById("mars-orbit").style.WebkitAnimationPlayState="running";   
+    document.getElementById("mars-orbit").style.animationPlayState="running";}
+function mare(){
+    document.getElementById("mars-orbit").style.WebkitAnimationPlayState="paused";
+    document.getElementById("mars-orbit").style.animationPlayState="paused";}
+function start(){
+    mercurystart();venstart();earthstart(); marstart();
+}
+function end(){
+    mercuryend(); venusend(); earthend(); marend();
+}
+</script>
+
+        <!-- Insert the 'earth' on the next line -->
+        
+        
+    </body>
+</html>

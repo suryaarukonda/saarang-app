@@ -1,0 +1,89 @@
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>  
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<div id="image"><img src="saarang2017.jpg"></div>
+<div class="container">
+
+    <form id="signup" action="success.html" method="post" autocomplete="on"  ng-app="myApp" ng-controller="validateCtrl" 
+name="myForm" novalidate>
+
+        <div class="header">
+        
+            <h3>Sign Up</h3>
+            
+            <p>Please fill the form</p>
+            
+        </div>
+        
+     	<div class="inputs">
+                 <!--firstname-->
+            <p><input type="text" name="firstname" placeholder=" First Name" ng-model="firstname" required autofocus> <br>
+            <span style="color:red" ng-show="myForm.firstname.$invalid && myForm.firstname.$dirt"y>
+            <span ng-show="myForm.firstname.$error.required">Firstname is required.</span>
+            </span></p>
+                <!--lastname-->
+            <p><input type="text" name="lastname" placeholder="Last Name" ng-model="lastname" required> <br>
+            <span style="color:red" ng-show="myForm.lastname.$invalid && myForm.lastname.$dirty">
+            <span ng-show="myForm.lastname.$error.required">Lastname is required.</span>
+            </span></p>
+        
+            <p><input type="email" placeholder="email address" name="email" ng-model="email" required="" /><br>
+            <span style="color:red" ng-show=" myForm.email.$invalid && myForm.email.$dirty">
+			<span ng-show="myForm.email.$error.required">Email is required.</span>
+			<span ng-show="myForm.email.$error.email">Invalid email address.</span>
+			</span></p>
+    
+            <input type="number" name="phone" required placeholder="Phone no" ng-model="phone" required=""><br>
+            <span style="color:red" ng-show=" myForm.phone.$invalid && myForm.phone.$dirty">
+            <span ng-show="myForm.phone.$error.required">Phone no is required.</span>
+            </span></p>
+
+            <input list="events" name="event" placeholder="Select an event from below"   style="  background: #f5f5f5;  font-size: 0.8rem; -moz-border-radius: 3px;  -webkit-border-radius: 3px;
+    border-radius: 3px; border: none; padding: 13px 10px;  width: 330px;  margin-bottom: 20px;  box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 ); clear: both; ">
+	         	<datalist id="events">
+		           	<option value="Onground Photography">
+		            <option value="Face Painting">
+		            <option value="Tattoo MAking Contest">
+		            <option value="Onsite creative Writing Contest">
+		            <option value="Vocals">
+	            </datalist><br>
+
+	        <input list="workshops" name="workshop" placeholder="Select a workshop"   style="  background: #f5f5f5;  font-size: 0.8rem; -moz-border-radius: 3px;  -webkit-border-radius: 3px;
+    border-radius: 3px; border: none; padding: 13px 10px;  width: 330px;  margin-bottom: 20px;  box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 ); clear: both; ">
+			    <datalist id="workshops">
+			        <option value="Dance workshops">
+			        <option value="Terribly tiny tales workshop">
+			        <option value="Aquarelle- The watercolor Painting Workshop">
+			        <option value="The paper quiling workshop">
+			        <option value="Photography workshop">
+			    </datalist><br><br>
+
+			Accomodation:<br>
+				       <input type="radio" name="acc" value="yes" > Yes
+				       <input type="radio" name="acc" value="no" checked> No <br>
+				      
+
+				  If so :<br><br>
+				      From:
+				       <input type="date" name="fromdate" style="  background: #f5f5f5;  font-size: 0.8rem; -moz-border-radius: 3px;  -webkit-border-radius: 3px;
+    border-radius: 3px; border: none; padding: 13px 10px;  width: 125px;  margin-bottom: 20px;  box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 ); clear: both; " >
+				      To:
+				       <input type="date" name="todate" style="  background: #f5f5f5;  font-size: 0.8rem; -moz-border-radius: 3px;  -webkit-border-radius: 3px;
+    border-radius: 3px; border: none; padding: 13px 10px;  width: 125px;  margin-bottom: 20px;  box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 ); clear: both; " ><br><br>
+  					</script>
+			<textarea name="message" rows="3" cols="20" placeholder="Requesta(If Any)"  style="  background: #f5f5f5;  font-size: 0.8rem; -moz-border-radius: 3px;  -webkit-border-radius: 3px;
+    border-radius: 3px; border: none; padding: 13px 10px;  width: 330px;  margin-bottom: 20px;  box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 ); clear: both; "></textarea><br>
+            
+            <button  type="submit" id="submit" ng-disabled="myForm.$invalid || myForm.$error.$required">REGISTER</button>
+        
+        </div>
+
+    </form>
+
+</div>
+​<script>
+var app = angular.module('myApp', []);
+app.controller('validateCtrl', function($scope) {
+    
+});
+</script>
