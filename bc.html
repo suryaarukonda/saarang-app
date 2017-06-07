@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>background</title>
+	<style type="text/css">
+		body{
+			background-color: yellow;
+			position: fixed;
+			
+		}
+		p{
+			background-color: #eee;
+		    /*width: 200px;*/
+		    /*height: 1000px;*/
+		    border: 1px dotted black;
+		    overflow-y:auto;
+		}
+	</style>
+</head>
+<body>
+<p >
+	Institute Web/Mobile<br>
+Operations Internship<br>
+
+Name:  <br>
+Roll No:<br>
+Contact No:<br>
+Email ID: <br>
+Position: Web/Mobile<br><br><br>
+
+
+Answer all the questions in the below section and attempt the problem statements according to whether you are applying for web or mobile operations internship.<br><br>
+
+General questions:<br>
+
+1. What relevant programming languages or frameworks are you comfortable with? State your credentials and any experience in development.<br>
+2. What improvements can you suggest in the current websites/apps made by institute WebOps/MobOps team?<br>
+3. Why are you applying for this internship?<br>
+4. How many hours can you commit every day during this span?<br>
+5. What do you expect out of this internship?<br>
+6. Will you be willing to continue as a full-time member of the team after the internship?<br>
+
+	
+Web Operations<br>
+
+Guidelines: <br>
+1. Take help from online resources. Understand how it works. But make sure that you understand what your code does, for you may be asked about it. The code can be wrong; but make sure the underlying logic correct.<br>
+2. In the problem statement, for each vertical, there are multiple levels with increasing order of difficulty and hence, weightage, and may(not) build over the previous problem. You may complete up to any level you can. Complete the task in at least one vertical (Frontend, PHP, JS), though completing in multiple would be better. Someone who does all the tasks in one vertical will obviously be preferred over someone who does only the first task in all three. Attempt as much as you can. Don’t worry, no one will get it all right.<br>
+3. Add comments throughout the code to explain what is happening. Try to keep the code clean. Messy code is okay, but unreadable code might not be considered.<br>
+4. Just like mentioned in the mail, you may refer any of the websites below:<br>
+W3Schools
+Tutorials Point
+Code Academy
+5. Submit your code in a .rar or .zip format, to alcatrazz.627@gmail.com, with the subject Web Ops Intern App, latest by May 22nd.<br>
+6. As mentioned in the mail, contact me for any queries regarding the problems statement on either the mail ID given above, or on my WhatsApp on 9566102389.<br><br>
+
+Problem Statement:<br>
+Backend(PHP): A lot of CSS is not required; the pages can look crude.<br>
+1. Create a simple sign up form on signup.php, which accepts name, email, address in textboxes each, gender as a dropdown or radio, and hobbies in a textarea. When you submit the data, the page redirects to dashboard.php, which displays the data submitted in the previous form.<br>
+
+2. Make a modification to the previous task and add a password field. Store the form details in a database using any database query language and method you like. (SQL is quite common; however, you are free to choose) <br><br>
+[Optional]: Depending on the total number of users in the database, generate a unique user ID with a format of your choosing (ex: U0001), use it as a primary key in the database, and display it on dashboard.php<br>
+3. To the previous task, add a provision such that the if the user is logged in, a PHP session is started and a cookie is stored such that when you open signup.php or login.php (as told later to make this new page), the page reads the cookie and redirects you to dashboard.php where you have the provision to log out via clicking the link to logout.php, which deletes the cookie and clears the session. Also add a login.php, which lets the user log in, and if the log in credentials are incorrect, redirects them to signup.php. All the user data submitted via signup.php should be pulled out of the database and displayed on dashboard.php, whenever the user is logged in. Display links on both signup.php and login.php to each other.
+[Optional]: On a wrong log in redirect to signup.php, display in red “User not found” before the sign-up form.
+
+4. On dashboard.php, have the provision such that the user can upload an image and add it to his gallery being displayed on dashboard.php. The user can upload as many images as they want, one after another [multifile uploads aren’t compulsory]. Make sure the user can only upload images (Decide a few allowed image formats). It is up to you how you want to restrict the upload to images. The images should be stored in a subdirectory, and an indexing should be added in the database. Whenever the user logs in, he should be able to see the image gallery on dashboard.php, right below the user information.
+
+Frontend(CSS): Try to avoid using any scripting language; accomplish the tasks via CSS.
+1. Create a page with:
+i. A sticky sidebar with four items, which change color on mouse hover.
+ii. A static background on the page which does not scroll with the page. Make the page scrollable by either adding enough text on the page, or any other way.
+iii. A table with alternating rows as striped. Make the table responsive to overflow in x-direction and add enough content to show the scrolling in x-direction.
+iv. The row in the table on which the mouse is hovering should have a darker background, and the animation of mouse over and out should last 1 second.
+v. Demonstrate the difference between visibility: hidden and display: none.
+vi. Make two boxes. Each should take up 35% of the width, with 10% on the left, in between, and right. Give them a background color and write some text. Center the text both horizontally and vertically. One should have the opacity of 0.5 for the whole box, and the other should have the opacity of 0.5 only for the background.
+
+2. Create a page with:
+i. Color gradient background.
+ii. A box that keeps going from corner to corner, in an infinite loop.
+iii. A list with custom bullets, and the bullet on the list item change when the item is hovered upon.
+iv. The text in the list showing different fonts. Use non-standard fonts(the ones not included with browsers by default), either from an online source (ex: Google Fonts), or downloaded font files. Show a few different text decorations and font effect, like font weight, italic, etc. in each list item.
+
+3. Make a personal “about me” page using Bootstrap, using at least six distinct types of classes, a few of the mandatory ones being listed:
+i. Scrollspy
+ii. A simple contact me form with glyphicons for each field.
+iii. A section with simple application of tabs.
+Choose the others as you like.
+Make the page media scalable (Content adjusts to different screen types, such as mobile, tablets etc.
+
+JavaScript: You may use plain JavaScript or jQuery for the following.
+1. Create a table, where the first column contains six grocery store items, in six rows. The second column contains corresponding pricings (choose the data as you wish). The third column should have six rows of textboxes, where the user can enter the quantity. The fourth column should have seven cells, the first six having the total cost of each item, as in (price × amount); the seventh cell should have a grand total of the above six. Below the table should be another input which lets the user choose a number from 0 to 50 (Choose either a number box, a range, a textbox with constraints, or any of your choosing). Based on the number chosen, the grand total should be discounted on the % chosen between 0 to 50, and displayed below the discount amount input as “Price after discount: <price>”, and should update the value every time the discount input is changed.
+[Optional]: If the user enters a non-integer value for amount, round it off to the nearest integer value. You may even display an error when the user enters a non-integer value.
+
+2. Create a sign-up form where the user enters name, email, password, confirm password, password hint and a check box about accepting the terms and conditions. When the user submits, check the following before the form submits:
+i. The name has at least two words, with the first letter capital in each.
+ii. The password is at least six characters, and does not contain any spaces.
+iii. The confirm password matches the password.
+iv. The password hint is not the same as the password.
+v. The email address should match the standard of <text>@<website>.<domain>.
+vi. The checkbox is checked.
+If any of the condition is not met, cancel the form submit and display the error to the user in any way you like. You can add additional fields if you want and corresponding constraints as necessary.
+
+3. On a blank page with a button, when the button is clicked, display a dropdown. The dropdown should have three options, plus one default “Select an option:”. Correspondingly, there should be three XML files present. Fill the XML files with any sample data you may like. Whenever the user selects an option from the dropdown, it should load data from the corresponding XML file and display it in a tabular form below the list. Changing the option should remove the previous table and display new data. Selecting the default “Select an option:” should clear the table after the dropdown.
+
+Mobile Operations
+
+Guidelines: 
+1. Your ability to grasp and apply is tested, so don’t panic if you are not aware of the subject. For starters, go to the official developer’s website https://developer.android.com/training/index.html and start!
+2. In the problem statement, there are levels 1 to 3 with increasing order of difficulty. Each level builds on the previous. Submit only one apk corresponding to the best level you have completed.
+3. Submit a single apk file with your name as the filename to indian.op45@gmail.com, with the subject as Mob Ops Intern App, latest by May 22nd. Contact the same for any queries.
+
+Problem Statement:
+1. Populate 100 cards displaying their number using recyclerview and colour odd and even differently.
+2. Add a Done button on every card and remove the card if the button is clicked.
+3. Add a spinner above the recyclerview and keep three options- odd, even and all. Display the corresponding cards on clicking any option in the spinner.
+
+
+
+
+
+
+
+
+
+Best of luck!
+
+ 
+For the newcomers:
+ 
+ 
+To set up a development environment, you can refer the following links:
+For HTML/CSS and JavaScript, your web browser is enough.
+(Unless it is IE. In that case, you should feel ashamed)
+For PHP, you will need to set up a server. XAMPP is a quick help to run PHP. 
+Click here to install XAMPP. Click here for a simple tutorial on what’s & how’s of XAMPP.
+For Android apps, you’re recommended to use Android Studio. 
+To download Android Studio, follow this link.
+
+
+</p>
+
+</body>
+</html>
